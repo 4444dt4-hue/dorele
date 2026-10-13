@@ -502,4 +502,17 @@ dialog .bar button{all:unset;cursor:pointer;color:#F6E8D6;padding:6px 14px;borde
 })();
 </script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18497342039"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','AW-18497342039');
+  // המרה: לחיצה על וואטסאפ
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');
+    if(a) gtag('event','conversion',{'send_to':'AW-18497342039/lIpuCOCC6JsdENeUnPRE','transport_type':'beacon'});
+  },true);
+</script>
 </body></html>
